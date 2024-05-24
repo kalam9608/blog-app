@@ -1,0 +1,103 @@
+body {
+  // max-width: 1280px;
+  // margin: 0 auto;
+  // padding: 2rem;
+  // text-align: center;
+  background-color: black;
+  color: white;
+}
+
+$border: 2px solid red;
+
+
+
+@mixin container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  // border: $border;
+
+}
+
+.container {
+  @include container;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(69, 63, 63);
+  padding: 0px 20px;
+  border-radius: 10px;
+
+  div {
+    h1 {
+      color: rgb(216, 194, 194);
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    ;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    li {
+      margin: 5px;
+
+      & :hover {
+        color: rgb(0, 102, 255);
+      }
+
+      button {
+        background: rgb(70, 67, 67);
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+    }
+  }
+
+}
+
+.sign-up {
+  max-width: 500px;
+  margin: auto;
+  background-color: rgba(176, 168, 168, 0.776);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.input {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  label {
+    margin-left: 15px;
+  }
+
+  input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+}
+
+.footer {
+  position: relative;
+  left: 0px;
+  bottom: 10%;
+  border: $border;
+
+}
